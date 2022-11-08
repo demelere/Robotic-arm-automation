@@ -9,7 +9,7 @@
 
 ### Updates and notes:
 #### 11/7/22
-Revealed the full pattern while accounting for ball diameter by rescaling all the place positions to be within the robot's reach.  To do:
+Refactored a couple small details and updated the scaling to show the full pattern while accounting for ball diameter. To do:
 * Refactor functions into a class that could be called from another script
 * Load station file from script
 
