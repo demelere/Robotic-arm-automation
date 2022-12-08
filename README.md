@@ -6,6 +6,9 @@
 5. From project directory root run `python3 pick_and_place_balls.py`
 
 ### Updates and notes:
+#### 12/8/22
+* This simulation environment would be a good candidate for deep reinforcement learning.  
+
 #### 11/7/22
 Refactored a couple small details and updated the scaling to show the full pattern while accounting for ball diameter. To do:
 * Refactor functions into a class that could be called from another script
