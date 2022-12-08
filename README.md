@@ -2,10 +2,8 @@
 1. Start virtual environment
 2. From project directory root run `pip install -r /path/to/requirements.txt`
 3. Create a `.env` file based off of `.env.template` and add Airtable config variables
-4. Download `hadrian_pick_place_exercise.rdk` station file and open it in RoboDK
+4. Download the `.rdk` station file and open it in RoboDK
 5. From project directory root run `python3 pick_and_place_balls.py`
-
-![Pick and place balls](./pick_and_place_balls.gif)
 
 ### Updates and notes:
 #### 11/7/22
@@ -15,4 +13,7 @@ Refactored a couple small details and updated the scaling to show the full patte
 
 #### 10/30/22
 In the interests of time, I ignored potential real-world constraints/collisions with the x-axis surface.  To do:
-* My next step would be refactor this by finding an intermediate pose/approach from above frame_pick.  
+* My next step would be to refactor this by finding a safe intermediate pose/approach from above frame_pick.  This may involve defining another reference frame called ‘table’.
+* Another approach would be to constrain the joints for the space we’re not using.  This would help with safety, and would speed up collision checking by reducing the amount of detail and triangles in the 3D models.
+* Another approach would be to add larger offsets
+* If it's possible, I would also look into moving the robot base
