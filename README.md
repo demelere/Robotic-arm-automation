@@ -15,7 +15,7 @@ Refactored a couple small details and updated the scaling to show the full patte
 * Load station file from script
 
 #### 10/30/22
-In the interests of time, I ignored potential real-world constraints/collisions with the x-axis surface.  To do:
+At the moment I'm ignoring potential real-world constraints/collisions with the x-axis surface.  To do:
 * My next step would be to refactor this by finding a safe intermediate pose/approach from above frame_pick.  This may involve defining another reference frame called ‘table’.
 * Another approach would be to constrain the joints for the space we’re not using.  This would help with safety, and would speed up collision checking by reducing the amount of detail and triangles in the 3D models.
 * Another approach would be to add larger offsets
